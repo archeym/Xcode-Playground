@@ -21,7 +21,7 @@ firstPost.postText = "just testing"
 firstPost.postAuthor = "AA"
 firstPost.addLike()
 
-print("Author - \(firstPost.postAuthor) has published a new post \(firstPost.postTitle) with the text: \(firstPost.postText)")
+print("Author 1- \(firstPost.postAuthor) has published a new post \(firstPost.postTitle) with the text: \(firstPost.postText)")
 
 let secondPost = firstPost
 
@@ -29,8 +29,9 @@ secondPost.postTitle = "my second twitter post"
 secondPost.postText = "testing"
 secondPost.postAuthor = "BB"
 
-print("Author - \(secondPost.postAuthor) has published a new post \(secondPost.postTitle) with the text: \(secondPost.postText)")
-
+print("Author 2- \(firstPost.postAuthor) has published a new post \(firstPost.postTitle) with the text: \(firstPost.postText)")
+print("Author 3- \(secondPost.postAuthor) has published a new post \(secondPost.postTitle) with the text: \(secondPost.postText)")
+firstPost === secondPost//check if object using same memory value
 
 class Human {
     var name = "Undefined"
